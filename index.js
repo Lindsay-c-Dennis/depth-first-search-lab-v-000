@@ -24,7 +24,7 @@ function findAdjacent(rootNode, vertices, edges) {
     let node = findNode(nodeNames[i], vertices);
     adjNodes.push(node);
   }
-  return adjNodes.filter(node => node.distance === null);
+  return adjNodes.filter(node => node.discovered === null);
 }
 
 function findNode(nodeName, vertices) {
