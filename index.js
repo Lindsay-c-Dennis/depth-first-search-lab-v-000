@@ -6,8 +6,10 @@ function depthFirstSearch(rootNode, vertices, edges) {
     let currentNode = stack.pop();
     if (currentNode.discovered === null) {
       currentNode.discovered = true;
+      let adjNodes = findAdjacent(currentNode.name, vertices, edges);
+      
     }  
-    let adjNodes = findAdjacent(currentNode.name, vertices, edges);
+    
     stack = stack.concat(adjNodes);
     discovered = discovered.concat(adjNodes);
   }
