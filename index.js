@@ -1,1 +1,3 @@
-function depthFirstSearch()
+function depthFirstSearch(rootNode, vertices, edges) {
+  
+}
