@@ -8,7 +8,7 @@ function depthFirstSearch(rootNode, vertices, edges) {
     }  
     let adjNodes = findAdjacent(currentNode.name, vertices, edges);
     stack = stack.concat(adjNodes);
-    discovered.push(currentNode);
+    discovered = discovered.concat(currentNode);
   }
   return discovered;
 }
