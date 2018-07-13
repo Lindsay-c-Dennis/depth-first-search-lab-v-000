@@ -9,3 +9,7 @@ function depthFirstSearch(rootNode, vertices, edges) {
     }
   }
 }
+
+function findAdjacent(rootNodeName, vertices, edges) {
+  
+}
