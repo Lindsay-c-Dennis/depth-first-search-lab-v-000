@@ -10,11 +10,7 @@ function depthFirstSearch(rootNode, vertices, edges) {
         discovered.push(node);
         stack.push(node);
       })
-      
     }  
-    
-    stack = stack.concat(adjNodes);
-    discovered = discovered.concat(adjNodes);
   }
   return discovered;
 }
