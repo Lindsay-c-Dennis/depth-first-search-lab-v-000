@@ -8,7 +8,7 @@ function depthFirstSearch(rootNode, vertices, edges) {
       currentNode.discovered = true;
       findAdjacent(currentNode.name, vertices, edges).forEach(node => {
         discovered.push(node);
-        
+        stack.push(node);
       })
       
     }  
