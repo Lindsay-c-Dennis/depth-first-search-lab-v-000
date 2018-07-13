@@ -6,7 +6,7 @@ function depthFirstSearch(rootNode, vertices, edges) {
     let currentNode = stack.pop();
     if (currentNode.discovered === null) {
       currentNode.discovered = true;
-      let adjNodes = findAdjacent(currentNode.name, vertices, edges);
+      findAdjacent(currentNode.name, vertices, edges).forEach()
       
     }  
     
