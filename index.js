@@ -4,7 +4,8 @@ function depthFirstSearch(rootNode, vertices, edges) {
   while (stack.length !== 0) {
     let currentNode = stack[0];
     if (currentNode.discovered === null) {
-      
+      currentNode.discovered = true;
+      discovered = discovered.concat()
     }
   }
 }
